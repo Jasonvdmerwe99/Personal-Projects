@@ -117,27 +117,27 @@ command_to_execute = rf'.\{UpOrDown} {environment_Choice}'
 UpDownEnvironment(directory_path, command_to_execute)
 if UpOrDown == 'up':
     AdminOpen = input("Do You Wish To Open Admin y/n?")
-    if AdminOpen == 'y':
+    if AdminOpen.lower() == 'y':
         ShouldOpenAdmin = True
 
     AssetOpen = input("Do You Wish To Open Asset y/n?")
-    if AssetOpen == 'y':
+    if AssetOpen.lower() == 'y':
         ShouldOpenAsset = True
 
     ConfigOpen = input("Do You Wish To Open Config y/n?")
-    if ConfigOpen == 'y':
+    if ConfigOpen.lower() == 'y':
         ShouldOpenConfig = True
 
     FlowOpen = input("Do You Wish To Open Flow y/n?")
-    if FlowOpen == 'y':
+    if FlowOpen.lower() == 'y':
         ShouldOpenFlow = True
 
     BusinessPartnerOpen = input("Do You Wish To Open BusinessPartner y/n?")
-    if BusinessPartnerOpen == 'y':
+    if BusinessPartnerOpen.lower() == 'y':
         ShouldOpenBusinessPartner = True
 
     SystemInformationOpen = input("Do You Wish To Open System Information y/n?")
-    if SystemInformationOpen == 'y':
+    if SystemInformationOpen.lower() == 'y':
         ShouldOpenSystemInformation = True
 
     OpenLocalhost()
